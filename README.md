@@ -19,7 +19,7 @@ This application has been built in native Javascript
 
     //Set parameters
     applicationTimer.callBackMethod = stopTimer;
-    applicationTimer.timer  = 5;
+    applicationTimer.timer  = 5; //Time in seconds
     applicationTimer.start();
 
     //Callback method
