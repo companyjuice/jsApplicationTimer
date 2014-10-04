@@ -46,8 +46,10 @@ jsApplicationTimer.prototype = {
      * @returns {undefined}
      */
     clickOnSelector: function (){
-        this.stop();
-        this.start();
+        if (false === this.stopAnimation) {
+            this.stop();
+            this.start();
+        }
     },
     
     /**
