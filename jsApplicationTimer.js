@@ -69,11 +69,11 @@ jsApplicationTimer.prototype = {
             //If time elapsed, stop timer and execute callback method
             if ((this.substituteTimer <= 0) || this.stopAnimation) {
                 
-                clearTimeout(this.timeOutFunction);
-                cancelAnimationFrame(this.rafTimer); 
+                this.substituteTimer = 0;
                 
-                //Execute callback function only if animation hasn't been stooped
-                if (!this.stopAnimation) {
+                //If we volontary stop animation, don't callback a function
+                if (false === this.stopAnimation) {
+                    this.stop();
                     this.callback();
                 }
                 
@@ -107,6 +107,8 @@ jsApplicationTimer.prototype = {
      * @returns {undefined}
      */
     callback: function(){
-        this.callBackMethod();
+        if (this.callBackMethod !== '') {
+            this.callBackMethod();
+        }         
     }
 };

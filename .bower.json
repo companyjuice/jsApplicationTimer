@@ -1,0 +1,34 @@
+{
+  "name": "jsApplicationTimer",
+  "main": "jsApplicationTimer.js",
+  "authors": [
+    "Edouard Kombo <edouard.kombo@gmail.com>"
+  ],
+  "description": "Javascript application timer helps you reset your application at specific time if no action on a salector has been done by user.",
+  "keywords": [
+    "javascript",
+    "application",
+    "timer",
+    "jsApplicationTimer",
+    "javascript",
+    "timer"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/edouardkombo/jsApplicationTimer",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "4a6beec366",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "4a6beec366d11401afd9c25efe63558501b88f9c"
+  },
+  "_source": "git://github.com/edouardkombo/jsApplicationTimer.git",
+  "_target": "*",
+  "_originalSource": "js-application-timer"
+}
